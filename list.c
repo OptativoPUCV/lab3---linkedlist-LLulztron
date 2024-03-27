@@ -38,8 +38,14 @@ List * createList()
   return lista;
 }
 
-void * firstList(List * list) {
+void * firstList(List * list) 
+{
+  if (list -> size == 0)
+  {
     return NULL;
+  }
+  list -> current = list -> head;
+  return list;
 }
 
 void * nextList(List * list) {

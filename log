@@ -25,3 +25,13 @@ Wed 27 Mar 2024 05:59:15 PM UTC:
  tests:  1|5
 total_score: 10/70
 99cc190
+Wed 27 Mar 2024 06:01:29 PM UTC: 
+ list.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:43:12: error: ‘List’ {aka ‘struct List’} has no member named ‘size’
+   43 |   if (list -> size == 0)
+      |            ^~
+Compilation failed
+c87079e
