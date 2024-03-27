@@ -13,3 +13,9 @@ list.c:33:10: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9d09888
+Wed 27 Mar 2024 05:58:54 PM UTC: 
+ list.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+ tests:  0|6
+total_score: 0/70
+d4a3767
