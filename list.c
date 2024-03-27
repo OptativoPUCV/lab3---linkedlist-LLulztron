@@ -40,7 +40,7 @@ List * createList()
 
 void * firstList(List * list) 
 {
-  if (list -> tail == 0)
+  if (list -> tail == NULL)
   {
     return NULL;
   }
