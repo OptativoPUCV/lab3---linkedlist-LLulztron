@@ -40,7 +40,11 @@ List * createList()
 
 void * firstList(List * list) 
 {
-  return NULL;
+  if (list -> head == NULL) {
+    return NULL;
+  }
+  list -> current = list -> head;
+  return list;
 }
 
 void * nextList(List * list) 
@@ -51,12 +55,7 @@ void * nextList(List * list)
 
 void * lastList(List * list) 
 {
-  Node *current = list -> head;
-  while (current -> next != NULL) 
-  {
-    current = current -> next;
-  }
-  return current;
+  return NULL;
 }
 
 void * prevList(List * list) {
