@@ -22,9 +22,9 @@ typedef List List;
 Node * createNode(void * data) {
     Node * new = (Node *)malloc(sizeof(Node));
     assert(new != NULL);
-    new->data = data;
-    new->prev = NULL;
-    new->next = NULL;
+    new -> data = data;
+    new -> prev = NULL;
+    new -> next = NULL;
     return new;
 }
 
@@ -40,19 +40,23 @@ List * createList()
 
 void * firstList(List * list) 
 {
-  if (list -> tail == NULL)
+  
+}
+
+void * nextList(List * list) 
+{
+  
+  return NULL;
+}
+
+void * lastList(List * list) 
+{
+  Node *current = list -> head;
+  while (current -> next != NULL) 
   {
-    return NULL;
+    current = current -> next;
   }
-  return list -> head;
-}
-
-void * nextList(List * list) {
-    return NULL;
-}
-
-void * lastList(List * list) {
-    return NULL;
+  return current;
 }
 
 void * prevList(List * list) {
